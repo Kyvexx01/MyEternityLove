@@ -2,58 +2,92 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <title>My Eternity Love</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Para ti</title>
+
   <style>
     body {
+      margin: 0;
       font-family: 'Georgia', serif;
-      background-color: #fff7f0;
-      color: #4a3f35;
+      background: #f6f1ec;
+      color: #2e2e2e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
       text-align: center;
-      padding: 40px;
+      max-width: 600px;
+      padding: 40px 20px;
     }
-    button {
-      background: none;
-      border: 1px solid #c8b6a6;
-      padding: 10px 20px;
-      margin: 10px;
-      cursor: pointer;
-      font-family: inherit;
+
+    h1 {
+      font-size: 42px;
+      letter-spacing: 2px;
+      margin-bottom: 50px;
     }
-    .card {
-      display: none;
-      margin-top: 20px;
-      padding: 20px;
-      border: 1px solid #e0d6cc;
-      background-color: #ffffff;
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 60px;
+    }
+
+    a.button {
+      text-decoration: none;
+      border: 1px solid #2e2e2e;
+      padding: 14px 0;
+      border-radius: 30px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #2e2e2e;
+      transition: all 0.3s ease;
+    }
+
+    a.button:hover {
+      background: #2e2e2e;
+      color: #f6f1ec;
+    }
+
+    footer {
+      font-size: 12px;
+      letter-spacing: 1px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 32px;
+      }
+      footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
     }
   </style>
-  <script>
-    function openCard(id) {
-      document.getElementById(id).style.display = 'block';
-    }
-  </script>
 </head>
+
 <body>
+  <div class="container">
+    <h1>MY ETERNITY LOVE</h1>
 
-  <h1>Para ti 🤍</h1>
-  <p>Toca una carta</p>
+    <div class="buttons">
+      <a href="letter1.html" class="button">OPEN IT!</a>
+      <a href="letter2.html" class="button">OPEN IT!</a>
+      <a href="letter3.html" class="button">OPEN IT!</a>
+    </div>
 
-  <button onclick="openCard('carta1')">Carta I</button>
-  <button onclick="openCard('carta2')">Carta II</button>
-  <button onclick="openCard('carta3')">Carta III</button>
-
-  <div id="carta1" class="card">
-    <p>Aquí va tu primera cartita.</p>
+    <footer>
+      <div>FEB 14, 2026</div>
+      <div>MADE WITH LOVE, FROM VIOLETT FOR IHAN.</div>
+      <div>I LOVE YOU.</div>
+    </footer>
   </div>
-
-  <div id="carta2" class="card">
-    <p>Aquí va tu segunda cartita.</p>
-  </div>
-
-  <div id="carta3" class="card">
-    <p>Aquí va tu tercera cartita.</p>
-  </div>
-
 </body>
 </html>
