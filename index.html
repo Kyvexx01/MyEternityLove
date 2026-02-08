@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para ti</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fff7f0;
+      color: #4a3f35;
+      text-align: center;
+      padding: 40px;
+    }
+    button {
+      background: none;
+      border: 1px solid #c8b6a6;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .card {
+      display: none;
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #e0d6cc;
+      background-color: #ffffff;
+    }
+  </style>
+  <script>
+    function openCard(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+
+  <h1>Para ti 🤍</h1>
+  <p>Toca una carta</p>
+
+  <button onclick="openCard('carta1')">Carta I</button>
+  <button onclick="openCard('carta2')">Carta II</button>
+  <button onclick="openCard('carta3')">Carta III</button>
+
+  <div id="carta1" class="card">
+    <p>Aquí va tu primera cartita.</p>
+  </div>
+
+  <div id="carta2" class="card">
+    <p>Aquí va tu segunda cartita.</p>
+  </div>
+
+  <div id="carta3" class="card">
+    <p>Aquí va tu tercera cartita.</p>
+  </div>
+
+</body>
+</html>
